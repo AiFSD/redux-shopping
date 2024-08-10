@@ -1,0 +1,150 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #003153;
+}
+
+body {
+    background-color: #00203a;
+}
+
+.container {
+    display: flex;
+    box-shadow: 10px 10px 10px black;
+    width: 65%;
+    margin-top: 50px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary {
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+.details {
+    display: flex;
+}
+
+.images {
+    height: 290px;
+    width: 200px;
+    border-right: 1px solid black;
+}
+
+.productdetails {
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding: 10px;
+    width: 350px;
+}
+
+.snag {
+    color: #003153;
+    font-size: larger;
+    margin-left: 5px;
+}
+
+.bill {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.prices {
+    border-bottom: 1px solid black;
+}
+
+.sum {
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.quantity {
+    margin-left: 10px;
+}
+
+.free {
+    font-size: larger;
+    color: white;
+    width: fit-content;
+    height: 60px;
+    padding: 10px;
+    margin-left: 300px;
+    margin-bottom: 20px auto;
+    display: block;
+}
+
+.snag p {
+    display: inline-flex;
+}
+
+.snag p::after {
+    content: '👇';
+    font-size: 1rem;
+    transform: rotate(45deg);
+    margin-left: 20px;
+}
+
+.last {
+    margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+
+    }
+
+    .details {
+        flex-direction: row;
+
+    }
+
+    .productdetails {
+        margin-left: 20px;
+        border-right: 1px solid black;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .details {
+        flex-direction: column;
+
+    }
+
+    .images {
+        max-width: 100%;
+
+    }
+
+    .productdetails {
+        margin-left: 0;
+        border-right: 0;
+        width: 100%;
+    }
+
+    .free {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .snag p::after {
+        font-size: 0.8rem;
+
+        margin-left: 10px;
+
+    }
+}
